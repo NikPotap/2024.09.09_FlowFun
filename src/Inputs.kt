@@ -1,7 +1,7 @@
 fun inputQuantity(): Int {
     while (true) {
         print("\nВведите необходимое количество паролей: ")
-        var input = readln()
+        val input = readln()
         if (input.toIntOrNull() == null) {
             println("Вводите число!")
             continue
@@ -21,7 +21,7 @@ fun inputQuantity(): Int {
 fun inputFirstChar(): String {
     while (true) {
         print("\nВведите первый символ для набора паролей: ")
-        var input = readln()
+        val input = readln()
         if (input.length != 1) {
             println("Нужен один символ!")
             continue
